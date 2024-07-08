@@ -3,6 +3,6 @@ from fastapi.responses import PlainTextResponse
 
 app = FastAPI()
 
-@app.get("/hi", response_class=PlainTextResponse)
+@app.get("/ping", response_class=PlainTextResponse)
 async def root():
     return "Timeweb Cloud + FastAPI = ❤️"
